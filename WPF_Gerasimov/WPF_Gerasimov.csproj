@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Add.png" />
+    <None Remove="Images\Delete.png" />
+    <None Remove="Images\Edit.png" />
+    <None Remove="Images\FindSymbol.png" />
+    <None Remove="Images\Refresh.png" />
+    <None Remove="Images\Save.png" />
+    <None Remove="Images\Undo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Add.png" />
+    <Resource Include="Images\Delete.png" />
+    <Resource Include="Images\Edit.png" />
+    <Resource Include="Images\FindSymbol.png" />
+    <Resource Include="Images\Refresh.png" />
+    <Resource Include="Images\Save.png" />
+    <Resource Include="Images\Undo.png" />
+  </ItemGroup>
+
+</Project>
